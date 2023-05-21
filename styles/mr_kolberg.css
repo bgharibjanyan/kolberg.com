@@ -1,0 +1,143 @@
+.biology {
+  width: 100%;
+  background-color: #7F0057;
+  padding-top: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.biology .content {
+  background-image: url(./../img/50.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 20px;
+  margin-left: 20px;
+  aspect-ratio: 13/9;
+  width: 70%;
+  margin-top: 100px;
+  padding-left: 20%;
+}
+.biology .content .header {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 119px;
+  font-family: MinervaModernW00-Regular;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+  max-height: 1em;
+  overflow: hidden;
+}
+.biology .content .event {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 89px;
+  font-family: Yantramanav;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  text-overflow: ellipsis;
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+  max-height: 1em;
+  overflow: hidden;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+.biology .content .info {
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.biology .content .info .kolberg-selfie {
+  width: 50%;
+  aspect-ratio: 1.4/1;
+}
+.biology .content .info .about {
+  width: 50%;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.biology .content .info .about .description {
+  font-family: Yantramanav;
+  font-size: 19px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  max-height: 5em;
+  overflow: hidden;
+  color: white;
+}
+.biology .content .info .about .biology-button {
+  font-family: Yantramanav;
+  font-size: 19px;
+  border: none;
+  background-color: #500137;
+  padding: 10px 20px 10px;
+  margin-top: 50px;
+  color: white;
+}
+.biology .age-icon {
+  padding-left: 100px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media only screen and (max-width: 1600px) {
+  .biology {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .biology .age-icon {
+    order: 1;
+  }
+  .biology .content {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .biology .age-icon {
+    padding: 0px;
+  }
+  .biology .content {
+    justify-content: flex-start;
+    padding: 15px;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .biology .content .header {
+    font-size: 41px;
+  }
+  .biology .content .event {
+    font-size: 25px;
+  }
+  .biology .content .info {
+    flex-direction: column;
+  }
+  .biology .content .info .kolberg-selfie {
+    aspect-ratio: 3/4;
+    width: 100%;
+  }
+  .biology .content .info .about {
+    width: 100%;
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .biology .content .info .about .description {
+    font-size: 15px;
+  }
+  .biology .content .info .about .biology-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=mr_kolberg.css.map */

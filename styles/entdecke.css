@@ -1,0 +1,43 @@
+.entdecke {
+  margin-bottom: 100px;
+}
+.entdecke .header {
+  font-size: 19px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-family: Yantramanav;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.entdecke .categories {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.entdecke .link {
+  text-decoration: none;
+  font-size: 43px;
+  font-family: MinervaModernW00-Regular;
+  color: black;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .entdecke .header {
+    font-size: 15px;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+  .entdecke .link {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bolder;
+  }
+  .entdecke .link:active {
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=entdecke.css.map */

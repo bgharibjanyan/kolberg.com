@@ -1,0 +1,114 @@
+.after-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 1;
+
+
+
+    .block1,
+    .block2 {
+        width: 50%;
+        aspect-ratio: 2/1.5;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        background-repeat: no-repeat;
+        max-height: 600px;
+
+
+        .text {
+            width: 80%;
+            height: fit-content;
+            padding-bottom: 50px;
+
+            .header {
+                font-family: MinervaModernW00-Regular;
+                color: aliceblue;
+                font-size: 45px;
+                width: 100%;
+                padding-left: 50px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .description {
+                font-family: Yantramanav;
+                font-size: 19px;
+                color: aliceblue;
+                padding-left: 50px;
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+
+    }
+
+    .block1 {
+        background-image: url(./../img/bigpick1.png);
+
+
+    }
+
+    .block2 {
+        background-image: url(./../img/bigpick2.png);
+    }
+
+
+}
+
+.after-header-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+
+    .button {
+        padding: 40px;
+        max-width: 25%;
+        border: none;
+
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .after-header {
+
+        flex-wrap: wrap;
+
+
+
+        .block1,
+        .block2 {
+            width: 100%;
+
+            .text {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.384);
+                padding: 15px;
+                padding-left: 0px;
+
+                .header {
+                    font-size: 26px;
+                    padding-left: 25px;
+
+                    padding-bottom: 0px;
+
+                }
+
+                .description {
+                    font-size: 14px;
+                    padding-left: 25px;
+
+                }
+            }
+
+        }
+    }
+}

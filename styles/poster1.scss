@@ -1,0 +1,116 @@
+.poster {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(./../img/background1.png);
+  aspect-ratio: 1.96/1;
+  padding-top: 200px;
+  padding-right: 150px;
+}
+
+.poster .poster-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.726);
+  max-width: 900px;
+  margin-right: 0px;
+  padding: 50px;
+  height: min-content;
+}
+
+.poster .poster-content .quote {
+  font-size: 15px;
+  font-family: Yantramanav;
+  color: white;
+}
+
+.poster .poster-content .header {
+  font-size: 73px;
+  margin: 20px;
+  font-family: MinervaModernW00-Regular;
+  color: white;
+}
+
+.poster .poster-content .description {
+  font-size: 19px;
+  font-family: Yantramanav;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.poster .poster-content .poster-button {
+  border: 0ch;
+  background-color: #707070;
+  font-size: 19px;
+  font-family: Yantramanav;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=poster1.css.map */
+
+@media only screen and (max-width: 1600px) {
+  .poster {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .poster {
+    .poster-content {
+      margin-top: 225px;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      padding: 25px;
+      flex-direction: column;
+      background-color: black;
+
+      .quote {
+        font-size: 10px;
+        padding-bottom: 15px;
+      }
+
+      .header {
+        max-width: 100%;
+        font-size: 24px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-align: start;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin: 0px;
+        padding-bottom: 15px;
+
+
+      }
+
+      .description {
+        display: flex;
+        font-size: 15px;
+        width: 100%;
+        justify-content: flex-start;
+
+
+
+      }
+
+      .poster-button {
+        width: 100%;
+        margin: 0px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+}

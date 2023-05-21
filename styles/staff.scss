@@ -1,0 +1,164 @@
+.staff_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .left,
+    .right {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border: 0px;
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 50%;
+            }
+        }
+
+
+    }
+
+    .left {
+        justify-content: flex-start;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+
+    .person {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 70%;
+        margin-top: 100px;
+
+
+        .person-picture {
+            object-fit: cover;
+            max-width: 50%;
+
+
+
+        }
+
+        .about {
+            width: 100%;
+            padding: 100px;
+
+            .info {
+                font-size: 36px;
+                font-family: MinervaModernW00-Regular;
+                font-style: italic;
+                margin-bottom: 20px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+
+                .quote {
+                    font-size: 100px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-family: Yantramanav;
+                    line-height: 0px;
+                }
+
+                .start {
+                    vertical-align: top;
+                }
+
+                .end {
+                    vertical-align: bottom;
+                }
+
+            }
+
+            .name,
+            .status {
+                font-family: Yantramanav;
+                font-size: 19px;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .staff_section {
+
+
+
+        .person {
+            flex-wrap: wrap;
+            justify-content: center;
+            min-width: 100%;
+
+            .person-picture {
+                min-width: 100%;
+                padding: 25px;
+            }
+
+            .about {
+                padding: 0px;
+
+
+                .name {
+                    font-size: 15px;
+                    padding-left: 25px;
+
+                }
+
+                .status {
+                    font-size: 15px;
+                    padding-left: 25px;
+
+                }
+
+                .info {
+                    font-size: 25px;
+                    -webkit-line-clamp: 6;
+                    padding: 25px;
+                    margin: 0px;
+
+                    .quote {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+
+        .left,
+        .right {
+            width: min-content;
+
+            .person-picture {
+                display: none;
+            }
+
+            .arrow {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+
+
+            }
+        }
+    }
+}

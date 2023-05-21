@@ -1,0 +1,93 @@
+.after-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.after-header .block1,
+.after-header .block2 {
+  width: 50%;
+  aspect-ratio: 2/1.5;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  max-height: 600px;
+}
+.after-header .block1 .text,
+.after-header .block2 .text {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 50px;
+}
+.after-header .block1 .text .header,
+.after-header .block2 .text .header {
+  font-family: MinervaModernW00-Regular;
+  color: aliceblue;
+  font-size: 45px;
+  width: 100%;
+  padding-left: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.after-header .block1 .text .description,
+.after-header .block2 .text .description {
+  font-family: Yantramanav;
+  font-size: 19px;
+  color: aliceblue;
+  padding-left: 50px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.after-header .block1 {
+  background-image: url(./../img/bigpick1.png);
+}
+.after-header .block2 {
+  background-image: url(./../img/bigpick2.png);
+}
+
+.after-header-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.after-header-buttons .button {
+  padding: 40px;
+  max-width: 25%;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .after-header {
+    flex-wrap: wrap;
+  }
+  .after-header .block1,
+.after-header .block2 {
+    width: 100%;
+  }
+  .after-header .block1 .text,
+.after-header .block2 .text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 15px;
+    padding-left: 0px;
+  }
+  .after-header .block1 .text .header,
+.after-header .block2 .text .header {
+    font-size: 26px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+  }
+  .after-header .block1 .text .description,
+.after-header .block2 .text .description {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+}/*# sourceMappingURL=first_section.css.map */

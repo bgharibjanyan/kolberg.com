@@ -1,0 +1,327 @@
+@font-face {
+
+    font-family: "Yantramanav";
+    src: url(./../fonts/Yantramanav-Regular.woff);
+    font-weight: 300;
+}
+
+@font-face {
+
+    font-family: "MinervaModernW00-Regular";
+    src: url(./../fonts/MinervaModern.woff);
+}
+
+
+
+* {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+.header-section {
+    width: 100%;
+
+    .header-underline {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding-left: 50px;
+        padding-right: 50px;
+
+
+        .description {
+            font-family: Yantramanav;
+            font-size: 14px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 40%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+
+            .phone-number {
+                font-family: Yantramanav;
+                font-size: 14px;
+                padding-left: 15px;
+            }
+
+            .loaction {
+                border: 0;
+                background-color: white;
+                padding: 2px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .main-header {
+        box-sizing: content-box;
+        background-color: #7F0057;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 100px;
+
+        .menu-button {
+            display: none;
+        }
+
+        .location {
+            display: none;
+        }
+
+        .short-left {
+            color: rgb(255, 255, 255);
+            font-family: Yantramanav;
+            font-size: 16px;
+            text-decoration: none;
+            display: none;
+        }
+
+        .header-left {
+
+            width: 50%;
+
+            display: flex;
+            align-items: center;
+
+            .serch-button {
+                padding: 25px;
+                border: 0;
+                background-color: #7F0057;
+            }
+
+            .left-nav-bar {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                .nav {
+                    padding: 25px;
+
+
+                    .nav-link {
+                        color: rgb(255, 255, 255);
+                        font-family: Yantramanav;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+
+        }
+
+        .header-logo {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            background-color: #7f005700;
+            background-image: url(./../img/logo\ bacground.png);
+            display: flex;
+            border: none;
+            width: 225px;
+            height: 150px;
+            z-index: 10;
+        }
+
+        .right-nav-bar {
+
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            height: 60%;
+            width: 50%;
+            box-sizing: border-box;
+            padding-right: 25px;
+
+
+
+
+            .text-links {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                list-style: none;
+                border-right: 1px solid rgba(255, 255, 255, 0.438);
+
+
+                .text {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    list-style: none;
+                    max-width: 400px;
+                }
+
+                .nav {
+                    padding: 25px;
+
+                    .nav-link {
+                        color: rgb(255, 255, 255);
+                        font-family: Yantramanav;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .img-links {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                list-style: none;
+
+                .img {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    list-style: none;
+
+                    .nav {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .header-section {
+        .main-header {
+            padding-bottom: 10px;
+            height: auto;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            z-index: 100px;
+            height: unset;
+
+
+            .header-left {
+                padding: 10px;
+                order: 2;
+            }
+
+            .right-nav-bar {
+                order: 3;
+            }
+
+            .header-logo {
+                order: 1;
+                width: 100%;
+                height: 80px;
+                justify-content: center;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-section {
+        .main-header {
+            justify-content: center;
+
+            .short-left {
+                display: flex;
+                padding: 10px;
+                order: 2;
+            }
+
+            .header-left {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-section {
+        .header-underline {
+            display: none;
+        }
+
+        .main-header {
+            justify-content: center;
+            padding: 10px;
+
+            .menu-button {
+                display: flex;
+                order: 2;
+                background-color: #7F0057;
+                border: none;
+                padding: 10px;
+
+                .menu-icon {
+                    width: 30px;
+                }
+            }
+
+            .location {
+                display: flex;
+                order: 4;
+                background-color: #7F0057;
+                border: none;
+                padding: 10px;
+
+                .gps-icon {
+                    width: 30px;
+                }
+            }
+
+
+            .short-left {
+                display: flex;
+            }
+
+            .header-left {
+                display: flex;
+                max-width: min-content;
+
+                .serch-button {
+                    display: flex;
+                    width: auto;
+                    height: auto;
+                    padding: 5px;
+
+                    .serch-icon {
+                        width: 30px;
+                    }
+                }
+
+                .left-nav-bar {
+                    display: none;
+                }
+            }
+
+            .right-nav-bar {
+                padding-right: 0px;
+                order: 3;
+                width: min-content;
+
+                .text-links {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

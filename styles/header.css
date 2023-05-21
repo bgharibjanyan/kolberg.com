@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Yantramanav";
+  src: url(./../fonts/Yantramanav-Regular.woff);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "MinervaModernW00-Regular";
+  src: url(./../fonts/MinervaModern.woff);
+}
+* {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.header-section {
+  width: 100%;
+}
+.header-section .header-underline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header-section .header-underline .description {
+  font-family: Yantramanav;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-section .header-underline .contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.header-section .header-underline .contacts .phone-number {
+  font-family: Yantramanav;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.header-section .header-underline .contacts .loaction {
+  border: 0;
+  background-color: white;
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-section .main-header {
+  box-sizing: content-box;
+  background-color: #7F0057;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
+}
+.header-section .main-header .menu-button {
+  display: none;
+}
+.header-section .main-header .location {
+  display: none;
+}
+.header-section .main-header .short-left {
+  color: rgb(255, 255, 255);
+  font-family: Yantramanav;
+  font-size: 16px;
+  text-decoration: none;
+  display: none;
+}
+.header-section .main-header .header-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.header-section .main-header .header-left .serch-button {
+  padding: 25px;
+  border: 0;
+  background-color: #7F0057;
+}
+.header-section .main-header .header-left .left-nav-bar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-section .main-header .header-left .left-nav-bar .nav {
+  padding: 25px;
+}
+.header-section .main-header .header-left .left-nav-bar .nav .nav-link {
+  color: rgb(255, 255, 255);
+  font-family: Yantramanav;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header-section .main-header .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(127, 0, 87, 0);
+  background-image: url(./../img/logo\ bacground.png);
+  display: flex;
+  border: none;
+  width: 225px;
+  height: 150px;
+  z-index: 10;
+}
+.header-section .main-header .right-nav-bar {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  height: 60%;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 25px;
+}
+.header-section .main-header .right-nav-bar .text-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.438);
+}
+.header-section .main-header .right-nav-bar .text-links .text {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  max-width: 400px;
+}
+.header-section .main-header .right-nav-bar .text-links .nav {
+  padding: 25px;
+}
+.header-section .main-header .right-nav-bar .text-links .nav .nav-link {
+  color: rgb(255, 255, 255);
+  font-family: Yantramanav;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header-section .main-header .right-nav-bar .img-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+.header-section .main-header .right-nav-bar .img-links .img {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+.header-section .main-header .right-nav-bar .img-links .img .nav {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .header-section .main-header {
+    padding-bottom: 10px;
+    height: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    z-index: 100px;
+    height: unset;
+  }
+  .header-section .main-header .header-left {
+    padding: 10px;
+    order: 2;
+  }
+  .header-section .main-header .right-nav-bar {
+    order: 3;
+  }
+  .header-section .main-header .header-logo {
+    order: 1;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header-section .main-header {
+    justify-content: center;
+  }
+  .header-section .main-header .short-left {
+    display: flex;
+    padding: 10px;
+    order: 2;
+  }
+  .header-section .main-header .header-left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header-section .header-underline {
+    display: none;
+  }
+  .header-section .main-header {
+    justify-content: center;
+    padding: 10px;
+  }
+  .header-section .main-header .menu-button {
+    display: flex;
+    order: 2;
+    background-color: #7F0057;
+    border: none;
+    padding: 10px;
+  }
+  .header-section .main-header .menu-button .menu-icon {
+    width: 30px;
+  }
+  .header-section .main-header .location {
+    display: flex;
+    order: 4;
+    background-color: #7F0057;
+    border: none;
+    padding: 10px;
+  }
+  .header-section .main-header .location .gps-icon {
+    width: 30px;
+  }
+  .header-section .main-header .short-left {
+    display: flex;
+  }
+  .header-section .main-header .header-left {
+    display: flex;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+  .header-section .main-header .header-left .serch-button {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
+  .header-section .main-header .header-left .serch-button .serch-icon {
+    width: 30px;
+  }
+  .header-section .main-header .header-left .left-nav-bar {
+    display: none;
+  }
+  .header-section .main-header .right-nav-bar {
+    padding-right: 0px;
+    order: 3;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .header-section .main-header .right-nav-bar .text-links {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

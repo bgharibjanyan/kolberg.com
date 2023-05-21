@@ -1,0 +1,62 @@
+.stander {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    max-width: 100%;
+
+    .stander-img {
+        aspect-ratio: 746/949;
+        width: 35%;
+        margin: 50px;
+
+
+
+    }
+
+    .stander-catalog {
+
+        margin-left: 1px;
+
+        .info {
+
+            .description {
+                font-family: Yantramanav;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .stander {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .stander-img {
+            max-width: 30%;
+            width: auto;
+        }
+
+        .stander-catalog {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .stander {
+        .stander-img {
+            min-width: 100%;
+            padding: 25px;
+            margin: 0px;
+        }
+    }
+
+}

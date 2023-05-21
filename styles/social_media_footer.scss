@@ -1,0 +1,125 @@
+.social-mesia-footer {
+    width: 100%;
+    padding-bottom: 100px;
+
+    .header {
+        font-size: 43px;
+        font-family: MinervaModernW00-Regular;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 33.33%;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: -moz-hidden-unscrollable;
+
+            .header {
+                font-size: 19px;
+                font-family: Yantramanav;
+                width: 60%;
+                text-align: center;
+            }
+        }
+
+        .logistic {
+            .icons {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: nowrap;
+            }
+        }
+
+        .contacts {
+            .phone {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .phone-icon {
+                    padding: 10px;
+                }
+
+                .number {
+                    color: #8B0459;
+                    font-family: MinervaModernW00-Regular;
+                    font-size: 34px;
+                }
+            }
+
+            .mail {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .mail-icon {
+                    padding: 5px;
+                }
+
+                .address {
+                    font-family: Yantramanav;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .payment {
+        max-width: 33.33%;
+        box-sizing: border-box;
+
+        .icons {
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .social-mesia-footer {
+        .content {
+            flex-direction: column;
+            align-items: center;
+
+            .item {
+                .header {
+                    font-size: 15px;
+                    width: 100%;
+                    font-weight: normal;
+                }
+
+                padding: 15px;
+                min-width: 100%;
+                padding-bottom: 30px;
+            }
+
+            .contacts {
+
+
+                .phone {
+                    .phone-icon {
+                        height: 50px;
+
+                    }
+
+                    .number {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

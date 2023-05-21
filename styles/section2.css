@@ -1,0 +1,67 @@
+.header-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header-footer .after-header-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header-footer .after-header-buttons .button {
+  border: 0;
+  background-color: white;
+  width: 25%;
+}
+.header-footer .after-header-buttons .button .button-description {
+  color: rgba(112, 112, 112, 0.4392156863);
+  font-family: Yantramanav;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header-footer .arrow {
+  height: 64px;
+  width: 64px;
+  border: none;
+  align-self: center;
+  background-color: black;
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-footer .after-header-buttons {
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 200px;
+    justify-content: center;
+  }
+  .header-footer .after-header-buttons .button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .header-footer .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header-footer .arrow {
+    height: 35px;
+    width: 25px;
+  }
+  .header-footer .arrow .left,
+.header-footer .arrow .right {
+    width: 20px;
+    margin: 5px;
+  }
+}/*# sourceMappingURL=section2.css.map */

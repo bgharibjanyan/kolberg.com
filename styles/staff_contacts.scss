@@ -1,0 +1,196 @@
+.staff-contacts {
+    background-color: black;
+    padding: 50px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .underline {
+        width: 100%;
+        color: white;
+        font-size: 15px;
+        font-family: Yantramanav;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .header {
+        width: 100%;
+        color: white;
+        font-size: 73px;
+        font-family: MinervaModernW00-Regular;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .section-description {
+        width: 100%;
+        color: white;
+        font-size: 15px;
+        font-family: Yantramanav;
+        text-align: center;
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .arrow {
+            display: none;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+
+            .item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 24%;
+
+                .person-img {
+                    aspect-ratio: 1/1;
+                    margin: 20px;
+                    width: 80%;
+                }
+
+                .status {
+                    width: 100%;
+                    color: #B5B5B5;
+                    font-family: MinervaModernW00-Regular;
+                    font-size: 22px;
+                    text-align: center;
+
+                }
+
+                .name {
+                    color: white;
+                    width: 100%;
+                    font-family: Yantramanav;
+                    font-size: 19px;
+                    text-align: center;
+                }
+
+                .contact {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    .cintact-icon {
+                        aspect-ratio: 1/1;
+                        width: 25px;
+                        height: 25px;
+                        margin: 5px;
+                    }
+
+                    .phone-number {
+                        color: #B5B5B5;
+                        font-family: Yantramanav;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+    .more {
+        display: flex;
+        width: max-content;
+        background-color: #2F2F2F;
+        padding: 10px;
+        border: none;
+        color: white;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .staff-contacts {
+        padding: 0px;
+
+        .header {
+            font-size: 26px;
+        }
+
+        .section-description {
+            font-size: 15px;
+            width: 100%;
+            padding: 30px;
+            padding-top: 0px;
+        }
+
+        .underline {
+            display: none;
+        }
+
+        .content {
+            flex-wrap: nowrap;
+            padding: 0px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .arrow {
+                display: flex;
+                border: none;
+                background-color: white;
+                width: 30px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+            }
+
+            .items {
+
+                flex-wrap: wrap;
+                max-height: 400px;
+                overflow: hidden;
+
+
+
+                .item {
+                    width: 100%;
+
+                    .person-img {
+                        height: 250px;
+                        width: 250px;
+
+                    }
+
+                    .name {
+                        font-size: 19px;
+                    }
+
+                    .status {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+
+        .more {
+            width: 90%;
+            margin: 15px;
+            padding: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.videos-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    .actual {
+        font-size: 19px;
+        font-family: Yantramanav;
+        text-align: center;
+        padding: 15px;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .header {
+        font-size: 43px;
+        font-family: MinervaModernW00-Regular;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .catalog {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+
+            width: 19%;
+
+            .video {
+                height: 75%;
+            }
+
+            .date {
+                color: #707070;
+                font-family: Yantramanav;
+                font-size: 14px;
+            }
+
+            .video-header {
+                max-width: 350px;
+                font-size: 34px;
+                font-family: MinervaModernW00-Regular;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height: 80px;
+            }
+
+            .more {
+                text-decoration: none;
+                color: #7F0057;
+                font-size: 12px;
+                font-family: Yantramanav;
+            }
+        }
+
+        .left-item {
+            aspect-ratio: 34/60;
+
+            .video {
+                background-image: url(./../img/video1.png);
+
+            }
+        }
+
+        .center-item {
+            aspect-ratio: 78/60;
+            width: 45%;
+
+            .video {
+                display: flex;
+                flex-wrap: wrap;
+                background-image: url(./../img/video2.png);
+                display: flex;
+                justify-content: center;
+
+                padding-bottom: 20%;
+
+
+                .info {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: Yantramanav;
+                    color: white;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                .play-button {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                }
+            }
+        }
+
+        .right-item {
+            aspect-ratio: 34/60;
+
+            .video {
+                background-image: url(./../img/video3.png);
+            }
+        }
+
+    }
+
+    .all {
+        margin-top: 50px;
+        border: 0ch;
+        background-color: #191919;
+        padding: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+        font-family: Yantramanav;
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .videos-section {
+        .catalog {
+
+            .item {
+                width: 70%;
+
+                .video-header {
+                    font-size: 26px;
+                }
+            }
+
+            .right-item,
+            .left-item {
+                display: none;
+            }
+        }
+    }
+}

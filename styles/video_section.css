@@ -1,0 +1,114 @@
+.videos-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.videos-section .actual {
+  font-size: 19px;
+  font-family: Yantramanav;
+  text-align: center;
+  padding: 15px;
+  padding-top: 50px;
+  width: 100%;
+}
+.videos-section .header {
+  font-size: 43px;
+  font-family: MinervaModernW00-Regular;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.videos-section .catalog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.videos-section .catalog .item {
+  width: 19%;
+}
+.videos-section .catalog .item .video {
+  height: 75%;
+}
+.videos-section .catalog .item .date {
+  color: #707070;
+  font-family: Yantramanav;
+  font-size: 14px;
+}
+.videos-section .catalog .item .video-header {
+  max-width: 350px;
+  font-size: 34px;
+  font-family: MinervaModernW00-Regular;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 80px;
+}
+.videos-section .catalog .item .more {
+  text-decoration: none;
+  color: #7F0057;
+  font-size: 12px;
+  font-family: Yantramanav;
+}
+.videos-section .catalog .left-item {
+  aspect-ratio: 34/60;
+}
+.videos-section .catalog .left-item .video {
+  background-image: url(./../img/video1.png);
+}
+.videos-section .catalog .center-item {
+  aspect-ratio: 78/60;
+  width: 45%;
+}
+.videos-section .catalog .center-item .video {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(./../img/video2.png);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+.videos-section .catalog .center-item .video .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Yantramanav;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+}
+.videos-section .catalog .center-item .video .play-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.videos-section .catalog .right-item {
+  aspect-ratio: 34/60;
+}
+.videos-section .catalog .right-item .video {
+  background-image: url(./../img/video3.png);
+}
+.videos-section .all {
+  margin-top: 50px;
+  border: 0ch;
+  background-color: #191919;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  font-family: Yantramanav;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 800px) {
+  .videos-section .catalog .item {
+    width: 70%;
+  }
+  .videos-section .catalog .item .video-header {
+    font-size: 26px;
+  }
+  .videos-section .catalog .right-item,
+.videos-section .catalog .left-item {
+    display: none;
+  }
+}/*# sourceMappingURL=video_section.css.map */

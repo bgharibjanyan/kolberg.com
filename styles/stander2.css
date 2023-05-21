@@ -1,0 +1,44 @@
+.second-stander .stander {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+.second-stander .stander .stander-img {
+  aspect-ratio: 1/1;
+  width: 35%;
+  padding-left: 100px;
+}
+.second-stander .stander .stander-catalog {
+  width: 50%;
+  margin-left: 1px;
+}
+.second-stander .stander .stander-catalog .info .description {
+  font-family: Yantramanav;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .second-stander .stander {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .second-stander .stander .stander-img {
+    max-width: 30%;
+    width: auto;
+  }
+  .second-stander .stander .stander-catalog {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .second-stander .stander .stander-img {
+    min-width: 100%;
+    padding: 25px;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=stander2.css.map */

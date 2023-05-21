@@ -1,0 +1,76 @@
+.catalog {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.catalog .arrow {
+  height: 64px;
+  width: 64px;
+  border: none;
+  align-self: center;
+  background-color: black;
+}
+.catalog .items {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.catalog .items .catalog-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 20%;
+  height: 100%;
+}
+.catalog .items .catalog-item .item-img {
+  padding-bottom: 50px;
+  max-width: 100%;
+}
+.catalog .items .catalog-item .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 19;
+}
+.catalog .items .catalog-item .info .product-name {
+  width: 100%;
+  display: flex;
+  font-family: Yantramanav;
+  justify-content: center;
+  font-weight: bold;
+}
+.catalog .items .catalog-item .info .description {
+  font-family: Yantramanav;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .catalog .arrow {
+    align-self: baseline;
+    margin-top: 150px;
+  }
+  .catalog .items {
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .catalog .items .catalog-item {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .catalog .arrow {
+    height: 30px;
+    width: 30px;
+  }
+  .catalog .arrow .left,
+.catalog .arrow .right {
+    width: 25px;
+    padding: 2px;
+  }
+}/*# sourceMappingURL=musical_items.css.map */

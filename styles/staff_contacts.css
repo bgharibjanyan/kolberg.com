@@ -1,0 +1,164 @@
+.staff-contacts {
+  background-color: black;
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.staff-contacts .underline {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-family: Yantramanav;
+  text-align: center;
+  padding-top: 50px;
+}
+.staff-contacts .header {
+  width: 100%;
+  color: white;
+  font-size: 73px;
+  font-family: MinervaModernW00-Regular;
+  text-align: center;
+  padding: 20px;
+}
+.staff-contacts .section-description {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-family: Yantramanav;
+  text-align: center;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+.staff-contacts .content {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.staff-contacts .content .arrow {
+  display: none;
+}
+.staff-contacts .content .items {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.staff-contacts .content .items .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 24%;
+}
+.staff-contacts .content .items .item .person-img {
+  aspect-ratio: 1/1;
+  margin: 20px;
+  width: 80%;
+}
+.staff-contacts .content .items .item .status {
+  width: 100%;
+  color: #B5B5B5;
+  font-family: MinervaModernW00-Regular;
+  font-size: 22px;
+  text-align: center;
+}
+.staff-contacts .content .items .item .name {
+  color: white;
+  width: 100%;
+  font-family: Yantramanav;
+  font-size: 19px;
+  text-align: center;
+}
+.staff-contacts .content .items .item .contact {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.staff-contacts .content .items .item .contact .cintact-icon {
+  aspect-ratio: 1/1;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+.staff-contacts .content .items .item .contact .phone-number {
+  color: #B5B5B5;
+  font-family: Yantramanav;
+  font-size: 19px;
+}
+.staff-contacts .more {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #2F2F2F;
+  padding: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .staff-contacts {
+    padding: 0px;
+  }
+  .staff-contacts .header {
+    font-size: 26px;
+  }
+  .staff-contacts .section-description {
+    font-size: 15px;
+    width: 100%;
+    padding: 30px;
+    padding-top: 0px;
+  }
+  .staff-contacts .underline {
+    display: none;
+  }
+  .staff-contacts .content {
+    flex-wrap: nowrap;
+    padding: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .staff-contacts .content .arrow {
+    display: flex;
+    border: none;
+    background-color: white;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .staff-contacts .content .items {
+    flex-wrap: wrap;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .staff-contacts .content .items .item {
+    width: 100%;
+  }
+  .staff-contacts .content .items .item .person-img {
+    height: 250px;
+    width: 250px;
+  }
+  .staff-contacts .content .items .item .name {
+    font-size: 19px;
+  }
+  .staff-contacts .content .items .item .status {
+    font-size: 19px;
+  }
+  .staff-contacts .more {
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=staff_contacts.css.map */

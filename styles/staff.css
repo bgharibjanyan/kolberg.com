@@ -1,0 +1,126 @@
+.staff_section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.staff_section .left,
+.staff_section .right {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.staff_section .left .arrow,
+.staff_section .right .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 0px;
+  width: 50px;
+  height: 50px;
+}
+.staff_section .left .arrow img,
+.staff_section .right .arrow img {
+  width: 50%;
+}
+.staff_section .left {
+  justify-content: flex-start;
+}
+.staff_section .right {
+  justify-content: flex-end;
+}
+.staff_section .person {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 70%;
+  margin-top: 100px;
+}
+.staff_section .person .person-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 50%;
+}
+.staff_section .person .about {
+  width: 100%;
+  padding: 100px;
+}
+.staff_section .person .about .info {
+  font-size: 36px;
+  font-family: MinervaModernW00-Regular;
+  font-style: italic;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.staff_section .person .about .info .quote {
+  font-size: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Yantramanav;
+  line-height: 0px;
+}
+.staff_section .person .about .info .start {
+  vertical-align: top;
+}
+.staff_section .person .about .info .end {
+  vertical-align: bottom;
+}
+.staff_section .person .about .name,
+.staff_section .person .about .status {
+  font-family: Yantramanav;
+  font-size: 19px;
+}
+.staff_section .person .about .name {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .staff_section .person {
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 100%;
+  }
+  .staff_section .person .person-picture {
+    min-width: 100%;
+    padding: 25px;
+  }
+  .staff_section .person .about {
+    padding: 0px;
+  }
+  .staff_section .person .about .name {
+    font-size: 15px;
+    padding-left: 25px;
+  }
+  .staff_section .person .about .status {
+    font-size: 15px;
+    padding-left: 25px;
+  }
+  .staff_section .person .about .info {
+    font-size: 25px;
+    -webkit-line-clamp: 6;
+    padding: 25px;
+    margin: 0px;
+  }
+  .staff_section .person .about .info .quote {
+    font-size: 50px;
+  }
+  .staff_section .left,
+.staff_section .right {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .staff_section .left .person-picture,
+.staff_section .right .person-picture {
+    display: none;
+  }
+  .staff_section .left .arrow,
+.staff_section .right .arrow {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+  }
+}/*# sourceMappingURL=staff.css.map */
